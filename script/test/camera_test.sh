@@ -1,0 +1,1 @@
+gst-launch-1.0 nvarguscamerasrc !   'video/x-raw(memory:NVMM), width=(int)640, height=(int)480, format=(string)NV12, framerate=(fraction)30/1' ! nvv4l2h264enc ! h264parse ! qtmux ! filesink   location=camera_test.mp4 -e
